@@ -1,0 +1,14 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class='wxParse add-wrap'hover-class="plus-hover">
+  <template is="wxParse" data="{{wxParseData:article1.nodes}}"/>
+  
+<button class="kf_button" open-type="share" >
+    <image class="kf_image" src="/images/share_icon.png"></image>
+</button>
+
+<button class="kf_button1">
+    <image class="kf_image1" src="/images/like_icon.png"></image>
+</button>
+</view>
+

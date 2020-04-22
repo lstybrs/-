@@ -1,0 +1,51 @@
+
+<view class="swiper-container">
+ <swiper autoplay="auto" interval="5000" duration="500" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+  <block wx:for="{{slider}}" wx:key="unique">
+   <swiper-item>
+    <image src="{{item.picUrl}}" class="img"></image>
+   </swiper-item>
+  </block>
+ </swiper>
+  
+ <view class="dots">
+  <block wx:for="{{slider}}" wx:key="unique">
+   <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+  </block>
+ </view>
+</view>
+<view bindtap="toast">
+<image class='img1' src='../../images/5.png'></image>
+<text class="child">文明监督员</text>
+<text class="foot">动动手拍张照 文明番禹家十分</text>
+</view>
+
+<view>
+<image class='img2' src='../../images/6.png'></image>
+<text class="footview">文明家园</text>
+</view>
+
+<view>
+<image class='img3' src='../../images/7.png'></image>
+<text class="footview1">文明社会</text>
+</view>
+
+<view>
+<image class='img4' src='../../images/8.png'></image>
+<text class="footview2">文明校园</text>
+</view>
+
+<view class='headview'>文明番禹大事件
+</view>
+
+<view bindtap="toast1">
+<image class='new' src='../../images/4.jpg'></image>
+<text class='text1'>全省十佳景区有三个在番禹，带你探究番禹有何法宝!</text>
+</view>
+
+<view>
+<image class='new1' src='../../images/3.jpg'></image>
+<text class='text2'>番禹：打造安全文明的旅游生态！</text>
+</view>
+
+

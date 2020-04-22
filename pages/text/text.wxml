@@ -1,0 +1,45 @@
+<!--pages/text/text.wxml-->
+<view class="log-list">
+<text class="log-item">选择发布类型</text>
+</view>
+
+<view>
+<button class='ind'><image class='ind1' src='/images/icon_tabbar_expose.png'></image>
+<text class='ind2'>曝光台</text>
+</button>
+</view>
+
+<view>
+<button class='ind4' ><image class='ind1' src='/images/icon_tabbar_zhengnengliang_selected.png'></image>
+<text class='ind2'>正能量</text>
+</button>
+</view>
+
+<view class="log-list">
+<text class="log-item">添加位置</text>
+ <input placeholder="选择你的位置" auto-focus>{{latitude}} {{longitude}}</input>
+</view>
+
+<view bindtap='chooseAddress'>
+      <image class='ind5'  src='/images/relocation.png'></image><text class='ind6'>重新定位</text>
+ </view>
+
+ <view class="log-list">
+<text class="log-item">添加图片</text>
+</view>
+
+<view>
+<button class='ind7' bindtap='chooseImage'><image class='ind9'  src='/images/add.png'></image></button>
+<image wx:for="{{images}}" wx:for-item="imageUrl" src='{{imageUrl}}' bindtap='imageClick' data-url='{{imageUrl}}'></image>
+</view>
+
+ <view class="log-list1">
+<text class="log-item1">填写问题描述</text>
+<input class='ind8' placeholder="写下身边大小事，文明程度大家评" auto-focus/>
+<input class='ind10' placeholder="姓名" auto-focus/>
+<input class='ind11' placeholder="手机号码" auto-focus/>
+</view>
+
+<view>
+<button>提交</button>
+</view>

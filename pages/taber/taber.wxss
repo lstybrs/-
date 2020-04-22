@@ -1,0 +1,163 @@
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6rpx;
+  background: red;
+}
+
+
+.v1{
+ width: 100%;
+ height:450rpx;
+background: rgb(241, 254, 255);
+ float: top;
+}
+
+.ind1{
+  position: absolute;
+  font-size: 16px;
+  margin-top: 135px;
+  margin-left: 50px;
+
+}
+.ind2{
+  color: rgb(207, 206, 206);
+  position: absolute;
+  font-size: 12px;
+  margin-top: 160px;
+  margin-left: 27px;
+}
+.ind3{
+  position: absolute;
+  font-size: 16px;
+  margin-top: 135px;
+  margin-left: 155px;
+}
+.ind4{
+  color: rgb(207, 206, 206);
+  position: absolute;
+  font-size: 12px;
+  margin-top: 160px;
+  margin-left: 130px;
+}
+
+.ind5{
+  position: absolute;
+  font-size: 16px;
+  margin-top: 135px;
+  margin-left: 248px;  
+}
+.ind9{
+  position: absolute;
+  font-size: 16px;
+  margin-top: 135px;
+  margin-left: 135px;
+}
+.ind6{
+  color: rgb(207, 206, 206);
+  position: absolute;
+  font-size: 12px;
+  margin-top: 160px;
+  margin-left: 228px;
+  }
+
+.ind8{
+  position: absolute;
+  width: 10rpx;
+  margin-top: 30px;
+}
+
+.jy{
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 30px;
+  text-align: center;
+}
+.jt{
+  position: absolute;
+  font-size: 12px;
+  color: rgb(207, 206, 206);
+  margin-left: 138px;
+  width: 80px;
+  margin-top: 30px;
+}
+.jn{
+  width: 80px;
+  margin-top: 30px;
+  position: absolute;
+  font-size: 13px;
+}
+
+.p1{
+  position: absolute;
+  margin-top: 49px;
+  margin-left: 20px;
+  width: 180rpx;
+  height: 180rpx;
+}
+.p2{
+  margin-top: 20px;
+  margin-left: 110px;
+  position: absolute;
+  width: 250rpx;
+  height: 250rpx;
+}
+.p3{
+  position: absolute;
+  margin-top: 49px;
+  margin-left: 225px; 
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.p4{
+  position: absolute;
+  margin-top: 65px;
+  margin-left: 33px;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 100px;
+}
+.p5{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 128px;
+  width: 185rpx;
+  height: 185rpx;
+  border-radius: 100px;
+}
+.p6{
+  position: absolute;
+  margin-top: 62px;
+  margin-left: 238px;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 100px;
+}
+.p7{
+  margin-left: 60rpx;
+  margin-top: 20px;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 100px;
+}

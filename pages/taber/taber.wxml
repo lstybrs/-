@@ -1,0 +1,99 @@
+<view>
+
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+
+ <view hidden="{{currentTab!==0}}"  class='v1'>
+
+
+  <image  src='{{cats[1].icon}}' class='p4' ></image>
+ <image src='/images/no2.png' class='p1'>
+</image>
+ <text class='ind1'>{{cats[1].name}}</text>
+ <text class='ind2'>成长值:{{cats[1].growth}}</text>
+
+
+
+<image  src='{{cats[0].icon}}' class='p5' ></image>
+<image src='/images/no1.png' class='p2'></image>
+<text class='ind3'>{{cats[0].name}}</text>
+ <text class='ind4'>成长值:{{cats[0].growth}}</text>
+
+
+
+<image  src='{{cats[2].icon}}' class='p6' ></image>
+<image  src='/images/no3.png' class='p3'></image>
+<text class='ind5'>{{cats[2].name}}</text>
+ <text class='ind6'>成长值:{{cats[2].growth}}</text>
+
+<view class='jy'>
+<view wx:for="{{cats}}" class='t7' wx:for-index="idx" wx:for-item="item"
+ wx:if='{{idx>2}}'>            
+<text class='ind8'>{{idx+1}}</text>  
+<image src='{{item.icon}}' class='p7'></image>
+<text  class='jn'>{{item.name}}</text>
+<text  class='jt'>成长值：{{item.growth}}</text>
+</view>
+</view>
+</view>
+
+ <view hidden="{{currentTab!==1}}"  class='v1'>
+  <image  src='{{cats1[1].icon}}' class='p4' ></image>
+ <image src='/images/no2.png' class='p1'>
+</image>
+ <text class='ind1'>{{cats1[1].name}}</text>
+ <text class='ind2'>成长值:{{cats1[1].growth}}</text>
+
+
+<image  src='{{cats1[0].icon}}' class='p5' ></image>
+<image src='/images/no1.png' class='p2'></image>
+<text class='ind9'>{{cats1[0].name}}</text>
+ <text class='ind4'>成长值:{{cats1[0].growth}}</text>
+
+
+<image  src='{{cats1[2].icon}}' class='p6' ></image>
+<image  src='/images/no3.png' class='p3'></image>
+<text class='ind5'>{{cats1[2].name}}</text>
+ <text class='ind6'>成长值:{{cats1[2].growth}}</text>
+
+<view class='jy'>
+<view wx:for="{{cats1}}" class='t7' wx:for-index="idx" wx:for-item="item"
+ wx:if='{{idx>2}}'>
+<text class='ind8'>{{idx+1}}</text>
+<image src='{{item.icon}}' class='p7'></image>
+<text  class='jn'>{{item.name}}</text>
+<text  class='jt'>成长值：{{item.growth}}</text>
+</view>
+</view>
+</view>
+
+ <view hidden="{{currentTab!==2}}"  class='v1'>
+  <image  src='{{cats2[1].icon}}' class='p4' ></image>
+ <image src='/images/no2.png' class='p1'>
+</image>
+ <text class='ind1'>{{cats2[1].name}}</text>
+ <text class='ind2'>成长值:{{cats2[1].growth}}</text>
+ 
+<image  src='{{cats2[0].icon}}' class='p5' ></image>
+<image src='/images/no1.png' class='p2'></image>
+<text class='ind9'>{{cats2[0].name}}</text>
+ <text class='ind4'>成长值:{{cats2[0].growth}}</text>
+
+<image  src='{{cats2[2].icon}}' class='p6' ></image>
+<image  src='/images/no3.png' class='p3'></image>
+<text class='ind5'>{{cats2[2].name}}</text>
+ <text class='ind6'>成长值:{{cats1[2].growth}}</text>
+
+<view class='jy'>
+<view wx:for="{{cats2}}" class='t7' wx:for-index="idx" wx:for-item="item"
+ wx:if='{{idx>2}}'>
+<text class='ind8'>{{idx+1}}</text>
+<image src='{{item.icon}}' class='p7'></image>
+<text  class='jn'>{{item.name}}</text>
+<text  class='jt'>成长值：{{item.growth}}</text>
+</view>
+</view>
+</view>
+</view>
